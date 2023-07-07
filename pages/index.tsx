@@ -60,11 +60,7 @@ export default function Home() {
             </p>
             <CodeBlock
               title="Terminal"
-              onCopy={() => {
-                navigator.clipboard.writeText(
-                  'curl -s "https://winterbuild.vercel.app/api/laravelsail/example-app" | bash'
-                )
-              }}
+              copyText='curl -s "https://winterbuild.vercel.app/api/laravelsail/example-app" | bash'
               tooltip={
                 <span>
                   Replace <HightlightText>example-app</HightlightText> with any
@@ -112,11 +108,7 @@ export default function Home() {
             </p>
             <CodeBlock
               title="Terminal"
-              onCopy={() => {
-                navigator.clipboard.writeText(
-                  'cd example-app && ./vendor/bin/sail up'
-                )
-              }}
+              copyText="cd example-app && ./vendor/bin/sail up"
             >
               cd example-app<br></br>./vendor/bin/sail up
             </CodeBlock>
@@ -127,11 +119,7 @@ export default function Home() {
             </p>
             <CodeBlock
               title="Terminal"
-              onCopy={() => {
-                navigator.clipboard.writeText(
-                  './vendor/bin/sail artisan winter:up'
-                )
-              }}
+              copyText="./vendor/bin/sail artisan winter:up"
             >
               ./vendor/bin/sail artisan winter:up
             </CodeBlock>
@@ -145,6 +133,7 @@ export default function Home() {
               href="https://laravel.com/docs/10.x/sail"
             >
               <svg
+                id="book"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
@@ -154,7 +143,7 @@ export default function Home() {
               </svg>
               Laravel Sail Documentation
             </a>
-          </article>     
+          </article>
         </section>
       </main>
     </>
