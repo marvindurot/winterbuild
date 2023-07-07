@@ -1,11 +1,7 @@
 import { useEffect, useState, PropsWithChildren } from 'react'
 import { useTheme } from 'next-themes'
 
-interface ThemeChangerProps extends PropsWithChildren {
-  size?: number
-}
-
-const ThemeChanger = ({ size = 12 }: ThemeChangerProps) => {
+const ThemeChanger = () => {
   const [mounted, setMounted] = useState(false)
   const { systemTheme, theme, setTheme } = useTheme()
 
@@ -32,7 +28,7 @@ const ThemeChanger = ({ size = 12 }: ThemeChangerProps) => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={`w-${size} h-${size}`}
+        className="w-12 h-12"
       >
         <path
           strokeLinecap="round"
@@ -53,7 +49,7 @@ const ThemeChanger = ({ size = 12 }: ThemeChangerProps) => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={`w-${size} h-${size}`}
+        className="w-12 h-12"
       >
         <path
           strokeLinecap="round"
