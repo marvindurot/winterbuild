@@ -119,7 +119,7 @@ export default function Home() {
             </p>
             <CodeBlock
               title="Terminal"
-              tooltip="This command will migrate database and generate a random administor password."
+              tooltip="This command will migrate database and generate a random administrator password."
               copyText="./vendor/bin/sail artisan winter:up"
             >
               ./vendor/bin/sail artisan winter:up
