@@ -119,13 +119,14 @@ export default function Home() {
             </p>
             <CodeBlock
               title="Terminal"
+              tooltip="This command will migrate database and generate a random administor password."
               copyText="./vendor/bin/sail artisan winter:up"
             >
               ./vendor/bin/sail artisan winter:up
             </CodeBlock>
             <p className="text-md mt-4">
               After the installation is complete, open the website using the{' '}
-              <HightlightText>http://localhost</HightlightText> address.
+              <HightlightText>http://localhost</HightlightText> address. You can login to the administration panel with the previous generated password. 
             </p>
             <h2 className="text-2xl dark:text-white mt-8 pb-4">See also</h2>
             <a
