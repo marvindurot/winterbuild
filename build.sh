@@ -11,9 +11,9 @@ docker run --rm \
     -v "$(pwd)":/opt \
     -w /opt \
     laravelsail/php82-composer:latest \
-    bash -c "composer create-project --ignore-platform-reqs --no-scripts wintercms/winter {{name}} \
-            && cd {{name}} && composer require --ignore-platform-reqs marvindurot/wn-sail-plugin \
-            && php ./artisan winter:env && php ./artisan key:generate ; sed -i 's/\"//g' .env \
+    bash -c "composer create-project --ignore-platform-reqs wintercms/winter {{name}} && cd {{name}} \
+            && sed -i 's/\"//g' .env && sed -i 's/Winter CMS/\"Winter CMS\"/g' .env \
+            && composer require --ignore-platform-reqs marvindurot/wn-sail-plugin \
             && php ./artisan sail:install --with={{extensions}} {{devcontainer}}"
 
 cd {{name}}
