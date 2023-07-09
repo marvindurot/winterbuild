@@ -21,7 +21,7 @@ export default function Home() {
           </nav>
         </section>
         <section className="flex items-center flex-col">
-          <article className="max-w-3xl font-sans dark:text-slate-400 text-gray-600 pb-12">
+          <article className="max-w-3xl font-sans dark:text-slate-400 text-gray-600 pb-12 mx-4">
             <h1 className="font-bold dark:text-white text-black text-3xl pb-2">
               Installing Winter CMS with Laravel Sail
             </h1>
