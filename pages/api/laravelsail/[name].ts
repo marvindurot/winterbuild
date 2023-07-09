@@ -49,8 +49,9 @@ export default function handler(
       }
     }
   } else {
-    // Default service
+    // Default services
     services.add("mysql");
+    services.add("redis");
   }
 
   const devcontainer = request.query.hasOwnProperty("devcontainer")
