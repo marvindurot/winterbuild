@@ -114,7 +114,7 @@ export default function Home() {
             </CodeBlock>
             <p className="text-md mt-4">
               Next, open another console window, navigate to the same directory
-              and run these commands to install Winter CMS. The database
+              and run this command to install Winter CMS. The database
               settings are preconfigured and ready to go.
             </p>
             <CodeBlock
